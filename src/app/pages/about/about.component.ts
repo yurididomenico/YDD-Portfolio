@@ -11,22 +11,25 @@ export class AboutComponent implements OnInit {
   listLibraries =
     'Ho iniziato il mio percorso imparando i seguenti linguaggi, framework e librerie:';
 
-  currentText = '';
-  currentIndex = 0;
-
   ngOnInit() {
-    this.typeDescription();
+    this.printDescription(this.description);
   }
 
-  typeDescription() {
+  ngOnDestroy() {}
+
+  printDescription(txt: string) {
+    let currentText = '';
+    let currentIndex = 0;
+    let intervalId: any;
     const printString = document.querySelector('.description');
-    if (this.currentIndex < this.description.length) {
-      this.currentText += this.description.charAt(this.currentIndex);
-      this.currentIndex++;
-      setTimeout(() => {
-        printString!.textContent = this.currentText;
-        this.typeDescription();
-      }, 40);
-    }
+    intervalId = setInterval(() => {
+      if (currentIndex < this.description.length) {
+        currentText += this.description.charAt(currentIndex);
+        currentIndex++;
+        printString!.textContent = currentText;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 40);
   }
 }
