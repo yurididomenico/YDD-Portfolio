@@ -1,0 +1,36 @@
+.fa-brands {
+  font-size: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  color: #3c3c3c;
+  margin-bottom: 20px;
+}
+
+.fa-brands:hover {
+  position: relative;
+
+  transform: scale(1.2);
+}
+
+.fa-github:hover {
+  color: black;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(to bottom right, #5b1eb1, #fe1648, #ffbf00);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.fa-youtube:hover {
+  color: #fe0000;
+}
