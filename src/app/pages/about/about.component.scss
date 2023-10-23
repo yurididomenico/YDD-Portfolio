@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  //
+  p {
+    font-size: 18px;
+  }
+
+  //
+  .chi-sono {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  //
+  .job-role {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: underline;
+    cursor: none;
+    display: inline-block;
+
+    &:hover {
+      box-shadow: 0 0 10px #1daa1b inset;
+    }
+
+    ::selection {
+      color: #0d0d0d;
+      background: #1daa1b;
+    }
+  }
+
+  //
+  .description {
+    width: 600px;
+    line-height: 25px;
+  }
+
+  //
+  h2 {
+    font-size: 30px;
+  }
+
+  //
+  .title {
+    font-size: 25px;
+  }
+
+  //
+  ul {
+    width: 400px;
+    box-shadow: 0 0 20px #1daa1b inset;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    cursor: none;
+
+    //
+    li {
+      font-size: 60px;
+      padding: 20px;
+      width: calc(100% / 4);
+    }
+  }
+}
