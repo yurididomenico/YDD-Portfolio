@@ -1,1 +1,27 @@
-<h1>YDD Portfolio</h1>
+<div class="container">
+  <h1>YDD Portfolio</h1>
+
+  <!-- <ul class="linksPage">
+    <li>Homepage</li>
+    <li>About</li>
+    <li>Esperienza</li>
+    <li>Progetti</li>
+    <li>Giochi</li>
+    <li>Contatti</li>
+  </ul> -->
+
+  <ul class="linksPage">
+    <li
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Homepage
+    </li>
+    <li routerLink="about" routerLinkActive="active">Chi Sono</li>
+    <li routerLink="experience" routerLinkActive="active">Esperienza</li>
+    <li routerLink="projects" routerLinkActive="active">Progetti</li>
+    <li routerLink="games" routerLinkActive="active">Giochi</li>
+    <li routerLink="contacts" routerLinkActive="active">Contatti</li>
+  </ul>
+</div>

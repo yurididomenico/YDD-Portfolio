@@ -1,4 +1,32 @@
-h1 {
-  font-family: "Pixelify Sans", sans-serif;
-  padding: 20px 10px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  //
+  h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 20px 10px;
+  }
+
+  //
+  .linksPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    //
+    li {
+      padding: 10px;
+      cursor: pointer;
+      transition-duration: 500ms;
+
+      &:hover {
+        transition-duration: 500ms;
+        background: linear-gradient(to bottom, transparent 95%, #1daa1b);
+        box-shadow: 0 5px 0 #1daa1b;
+        color: #60f75e;
+      }
+    }
+  }
 }
