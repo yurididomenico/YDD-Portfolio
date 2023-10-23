@@ -8,6 +8,12 @@ import { MainComponent } from './components/main/main.component';
 import { LineComponent } from './components/line/line.component';
 import { SocialsComponent } from './components/socials/socials.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './pages/about/about.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { GamesComponent } from './pages/games/games.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +22,17 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     MainComponent,
     LineComponent,
     SocialsComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    GamesComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

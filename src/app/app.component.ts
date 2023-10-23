@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
 
   getMouseCoords() {
     const mousePosText = document.getElementById('mouse-pos');
+
     let mousePos = {
       x: 0,
       y: 0,
