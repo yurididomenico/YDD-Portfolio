@@ -10,6 +10,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
   //
   private firstTimeOut: any;
   private secondTimeOut: any;
+  private thirdTimeOut: any;
 
   constructor(private servicePrintLetter: PrintLetterByLetterService) {}
 
@@ -18,6 +19,16 @@ export class AboutComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    this.printDescription();
+  }
+
+  ngOnDestroy() {
+    clearTimeout(this.firstTimeOut);
+    clearTimeout(this.secondTimeOut);
+    clearTimeout(this.thirdTimeOut);
+  }
+
+  printDescription() {
     this.servicePrintLetter.currentIndex = 0;
     this.firstTimeOut = setTimeout(() => {
       this.servicePrintLetter.printLetterByLetter(
@@ -32,10 +43,12 @@ export class AboutComponent implements OnInit, AfterViewInit {
         this.servicePrintLetter.descriptions.listLibraries
       );
     }, 12000);
-  }
-
-  ngOnDestroy() {
-    clearTimeout(this.firstTimeOut);
-    clearTimeout(this.secondTimeOut);
+    this.thirdTimeOut = setTimeout(() => {
+      this.servicePrintLetter.currentIndex = 0;
+      this.servicePrintLetter.printLetterByLetter(
+        'languages',
+        this.servicePrintLetter.descriptions.languages
+      );
+    }, 19000);
   }
 }

@@ -9,6 +9,8 @@ export class PrintLetterByLetterService {
       'Dopo anni dedicati alla grafica 3d mi sono approcciato al mondo dello sviluppo web, acquisendo successivamente competenze tecniche sia su lato Front-end che Back-end.',
     listLibraries:
       'Ho iniziato il mio percorso imparando i seguenti linguaggi, framework e librerie:',
+    languages:
+      'HTML, CSS, JavaScript, PHP, Sass, Bootstrap, Laravel, Vue, Angular.',
   };
   currentText = '';
   currentIndex = 0;
