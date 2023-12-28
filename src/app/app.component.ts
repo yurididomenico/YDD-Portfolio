@@ -26,19 +26,31 @@ export class AppComponent implements OnInit {
         y: event.clientY,
       };
 
+      const selectContainer = document.getElementsByClassName('container')[0];
       const testDiv = document.createElement('div');
 
       testDiv.style.position = 'absolute';
       testDiv.style.height = '4px';
       testDiv.style.width = '4px';
-      testDiv.style.backgroundColor = 'red';
+      testDiv.style.backgroundColor = '#1daa1b';
+      testDiv.style.borderRadius = '50%';
       testDiv.style.zIndex = '1000';
 
-      testDiv.style.top = mousePos.y + 'px';
-      testDiv.style.left = mousePos.x + 'px';
-      document.getElementsByClassName('container')[0].appendChild(testDiv);
+      testDiv.style.top = mousePos.y + 10 + 'px';
+      testDiv.style.left = mousePos.x + 10 + 'px';
+      // selectContainer.appendChild(testDiv);
 
-      mousePosText!.textContent = `(${mousePos.x}, ${mousePos.y})`;
+      let idTest = setInterval(() => {
+        console.log('running');
+        selectContainer.appendChild(testDiv);
+      }, 20);
+
+      setTimeout(() => {
+        console.log('finish');
+
+        clearInterval(idTest);
+        testDiv.remove();
+      }, 200);
     });
   }
 }
