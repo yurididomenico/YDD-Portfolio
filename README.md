@@ -2,9 +2,9 @@
 
 Portfolio realizzato con Angular 16.
 
-- Desktop ✔
-- Tablet ❌
-- Mobile ❌
+✔ Desktop 
+❌ Tablet 
+❌ Mobile
 
 ---
 
