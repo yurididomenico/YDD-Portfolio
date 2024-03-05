@@ -1,4 +1,12 @@
-# YddPortfolioAngular
+# Portfolio Yuri Di Domenico
+
+Portfolio realizzato con Angular 16.
+
+Versione Desktop ✔
+Versione Tablet ❌
+Versione Mobile ❌
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
