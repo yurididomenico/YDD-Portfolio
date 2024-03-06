@@ -30,10 +30,10 @@ export class AppComponent implements OnInit {
       const testDiv = document.createElement('div');
 
       testDiv.style.position = 'absolute';
-      testDiv.style.height = '4px';
-      testDiv.style.width = '4px';
+      testDiv.style.height = '3px';
+      testDiv.style.width = '3px';
       testDiv.style.backgroundColor = '#1daa1b';
-      testDiv.style.borderRadius = '50%';
+      testDiv.style.borderRadius = '3px';
       testDiv.style.zIndex = '1000';
 
       testDiv.style.top = mousePos.y + 10 + 'px';
@@ -41,16 +41,13 @@ export class AppComponent implements OnInit {
       // selectContainer.appendChild(testDiv);
 
       let idTest = setInterval(() => {
-        console.log('running');
         selectContainer.appendChild(testDiv);
-      }, 20);
+      }, 50);
 
       setTimeout(() => {
-        console.log('finish');
-
         clearInterval(idTest);
         testDiv.remove();
-      }, 200);
+      }, 300);
     });
   }
 }
