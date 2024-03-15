@@ -30,14 +30,15 @@ export class AppComponent implements OnInit {
       const testDiv = document.createElement('div');
 
       testDiv.style.position = 'absolute';
-      testDiv.style.height = '3px';
-      testDiv.style.width = '3px';
+      testDiv.style.height = '5px';
+      testDiv.style.width = '5px';
       testDiv.style.backgroundColor = '#1daa1b';
-      testDiv.style.borderRadius = '3px';
+      testDiv.style.borderRadius = '5px';
+      // testDiv.style.border = '1px dashed #005b00';
       testDiv.style.zIndex = '1000';
 
       testDiv.style.top = mousePos.y + 10 + 'px';
-      testDiv.style.left = mousePos.x + 10 + 'px';
+      testDiv.style.left = mousePos.x + 'px';
       // selectContainer.appendChild(testDiv);
 
       let idTest = setInterval(() => {
