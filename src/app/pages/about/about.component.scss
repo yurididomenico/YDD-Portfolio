@@ -1,3 +1,5 @@
+@import 'src/assets/style/styleHeaders.scss';
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -7,11 +9,7 @@
     font-size: 18px;
   }
 
-  //
-  .chi-sono {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
+
 
   //
   .job-role {

@@ -42,7 +42,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
         'listLibraries',
         this.servicePrintLetter.descriptions.listLibraries
       );
-    }, 12000);
+    }, 10000);
     this.thirdTimeOut = setTimeout(() => {
       this.servicePrintLetter.currentIndex = 0;
       this.servicePrintLetter.printLetterByLetter(
