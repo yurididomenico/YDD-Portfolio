@@ -1,0 +1,36 @@
+@import 'src/assets/style/styleColors.scss';
+@import 'src/assets/style/styleHeaders.scss';
+
+.container {
+
+  .area-carte {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .esperienze-carta {
+      transition-duration: 200ms;
+      opacity: 1;
+      width: 400px;
+      padding: 20px;
+      border: 2px solid $primary-color;
+      border-radius: 20px;
+      margin-bottom: 80px;
+      cursor: default;
+
+      .esperienza-posizione {
+        height: 50px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .esperienza-descrizione {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+  }
+}
