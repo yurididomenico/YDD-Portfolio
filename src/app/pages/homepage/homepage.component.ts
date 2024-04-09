@@ -6,16 +6,30 @@ import { Component, OnDestroy } from '@angular/core';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnDestroy {
+  cursor = '';
+
 
   private mouseMoveListener: (event: MouseEvent) => void;
+  private intervalCursor!: number;
 
   constructor() {
     this.mouseMoveListener = this.getMouseCoords.bind(this);
     window.addEventListener('mousemove', this.mouseMoveListener);
   }
 
+  ngOnInit() {
+    this.intervalCursor = setInterval(() => {
+    this.cursor = '█';
+
+    setTimeout(() => {
+      this.cursor = '';
+    }, 1000);
+    }, 2000) as any;
+  }
+
   ngOnDestroy() {
     window.removeEventListener('mousemove', this.mouseMoveListener);
+    clearInterval(this.intervalCursor);
   }
 
   private getMouseCoords(event: MouseEvent) {
@@ -44,4 +58,6 @@ export class HomepageComponent implements OnDestroy {
       dot.remove();
     }, 300);
   }
+
+
 }
