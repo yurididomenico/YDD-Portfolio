@@ -8,4 +8,9 @@ import { Project } from 'src/app/pages/projects/project.model';
 })
 export class ProjectCardComponent {
   @Input() progetto: Project = new Project('', '', '');
+  @Input() indice: number | undefined;
+
+  isDispari(): boolean {
+    return this.indice !== undefined && this.indice % 2 !== 0;
+  }
 }
