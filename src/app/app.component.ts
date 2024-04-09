@@ -39,6 +39,7 @@ export class AppComponent implements OnInit {
 
       testDiv.style.top = mousePos.y + 10 + 'px';
       testDiv.style.left = mousePos.x + 'px';
+      testDiv.style.opacity = '0.5';
       // selectContainer.appendChild(testDiv);
 
       let idTest = setInterval(() => {
