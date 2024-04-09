@@ -4,7 +4,6 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
-import { GamesComponent } from './pages/games/games.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 
 const routes: Routes = [
@@ -12,7 +11,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'games', component: GamesComponent },
   { path: 'contacts', component: ContactsComponent },
 ];
 

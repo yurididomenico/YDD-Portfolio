@@ -15,7 +15,6 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { GamesComponent } from './pages/games/games.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 
 import { SocialsComponent } from './components/socials/socials.component';
@@ -31,7 +30,6 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
-    GamesComponent,
     ContactsComponent,
     ProjectCardComponent,
   ],
