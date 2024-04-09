@@ -6,50 +6,41 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+
   title = 'ydd-portfolio-angular';
 
   ngOnInit(): void {
-    this.getMouseCoords();
+    // this.getMouseCoords();
   }
 
-  getMouseCoords() {
-    const mousePosText = document.getElementById('mouse-pos');
 
-    let mousePos = {
-      x: 0,
-      y: 0,
-    };
+  // getMouseCoords() {
+  //   const selectContainer = document.getElementsByClassName('container')[0];
 
-    window.addEventListener('mousemove', (event) => {
-      mousePos = {
-        x: event.clientX,
-        y: event.clientY,
-      };
+  //   window.addEventListener('mousemove', (event) => {
+  //     const mousePos = {
+  //       x: event.clientX,
+  //       y: event.clientY,
+  //     };
 
-      const selectContainer = document.getElementsByClassName('container')[0];
-      const testDiv = document.createElement('div');
+  //     const dot = document.createElement('div');
+  //     dot.style.cssText = `
+  //       position: absolute;
+  //       height: 5px;
+  //       width: 5px;
+  //       background-color: #1daa1b;
+  //       border-radius: 5px;
+  //       top: ${mousePos.y + 10}px;
+  //       left: ${mousePos.x}px;
+  //       opacity: 0.5;
+  //       z-index: 1000;
+  //     `;
 
-      testDiv.style.position = 'absolute';
-      testDiv.style.height = '5px';
-      testDiv.style.width = '5px';
-      testDiv.style.backgroundColor = '#1daa1b';
-      testDiv.style.borderRadius = '5px';
-      // testDiv.style.border = '1px dashed #005b00';
-      testDiv.style.zIndex = '1000';
+  //     selectContainer.appendChild(dot);
 
-      testDiv.style.top = mousePos.y + 10 + 'px';
-      testDiv.style.left = mousePos.x + 'px';
-      testDiv.style.opacity = '0.5';
-      // selectContainer.appendChild(testDiv);
-
-      let idTest = setInterval(() => {
-        selectContainer.appendChild(testDiv);
-      }, 50);
-
-      setTimeout(() => {
-        clearInterval(idTest);
-        testDiv.remove();
-      }, 300);
-    });
-  }
+  //     setTimeout(() => {
+  //       dot.remove();
+  //     }, 300);
+  //   });
+  // }
 }
