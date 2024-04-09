@@ -11,19 +11,19 @@ export class ContactsComponent {
 
   constructor(private clipboard: Clipboard) {}
 
-  copyTextToClipboard() {
-    const valueSpan = document.querySelector('.contatto span') as HTMLElement;
+  copyTextToClipboard(selector: string) {
+    const valueSpan = document.querySelector(selector) as HTMLElement;
     if (valueSpan) {
       const value = valueSpan.innerText.trim();
       this.clipboard.copy(value);
 
       // Show
-      const popup = document.querySelector('.popup');
-      popup!.classList.add('show');
+      const popup = valueSpan.parentElement!.querySelector('.popup') as HTMLElement;
+      popup.classList.add('show');
 
       setTimeout(() => {
         // Hide
-        popup!.classList.remove('show');
+        popup.classList.remove('show');
       }, 800);
     }
   }

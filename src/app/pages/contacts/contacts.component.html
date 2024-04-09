@@ -4,7 +4,7 @@
   <div class="contatto" >
     <img src="assets/img/logoGmail.png" alt="logo-gmail">
     <span class="contatti-mail">yurididomenico93@gmail.com</span>
-    <i class="fa-regular fa-copy" (click)="copyTextToClipboard()"></i>
+    <i class="fa-regular fa-copy" (click)="copyTextToClipboard('.contatti-mail')"></i>
     <!-- <div class="popup" *ngIf="showPopup">Copiato!</div> -->
     <div class="popup">Copiato!</div>
   </div>
@@ -22,6 +22,8 @@
   <div class="contatto">
     <i class="fa-solid fa-phone width-20 text-green"></i>
     <span class="contatti-telefono">3480934162</span>
+    <i class="fa-regular fa-copy" (click)="copyTextToClipboard('.contatti-telefono')"></i>
+    <div class="popup">Copiato!</div>
   </div>
 
 
