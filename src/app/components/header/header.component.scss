@@ -1,8 +1,16 @@
+@import 'src/assets/style/styleColors.scss';
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px 0;
+  position: sticky;
+  top: 0;
+  background-color: $background-color;
+  border-bottom: 2px solid $primary-color;
+  z-index: 1;
+
 
   //
   h1 {
