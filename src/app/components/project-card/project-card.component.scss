@@ -1,0 +1,31 @@
+.project-card {
+
+
+  .project-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    span {
+      font-size: 40px;
+      margin-inline: 20px;
+    }
+  }
+
+  article {
+    display: flex;
+
+    video {
+      width: 70%;
+      height: 500px;
+    }
+
+    p {
+      font-size: 20px;
+      padding-top: 40px;
+      padding-left: 80px;
+      line-height: 150%;
+      cursor: default;
+    }
+  }
+}

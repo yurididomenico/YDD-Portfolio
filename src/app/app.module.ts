@@ -19,6 +19,7 @@ import { GamesComponent } from './pages/games/games.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 
 import { SocialsComponent } from './components/socials/socials.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { SocialsComponent } from './components/socials/socials.component';
     ProjectsComponent,
     GamesComponent,
     ContactsComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
