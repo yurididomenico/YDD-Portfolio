@@ -1,23 +1,28 @@
 <div class="container">
   <div class="titolo-pagina">Contatti</div>
 
-  <div class="contatto">
-    <img src="assets/img/logoGmail.png" alt="logo-gmail" class="width-20">
-    <h4>yurididomenico93@gmail.com</h4>
+  <div class="contatto" >
+    <img src="assets/img/logoGmail.png" alt="logo-gmail">
+    <span class="contatti-mail">yurididomenico93@gmail.com</span>
+    <i class="fa-regular fa-copy" (click)="copyTextToClipboard()"></i>
+    <!-- <div class="popup" *ngIf="showPopup">Copiato!</div> -->
+    <div class="popup">Copiato!</div>
   </div>
 
   <a href="https://www.linkedin.com/in/yuri-di-domenico-218858150/" class="contatto">
-    <img src="assets/img/logoLinkedin.png" alt="logo-linkedin" class="width-20">
-    <h4>Yuri Di Domenico</h4>
+    <img src="assets/img/logoLinkedin.png" alt="logo-linkedin">
+    <span>Yuri Di Domenico</span>
   </a>
 
   <a href="https://github.com/yurididomenico" class="contatto">
-    <img src="assets/img/logoGit.png" alt="logo-gmail" class="width-20">
-    <h4>yurididomenico</h4>
+    <img src="assets/img/logoGit.png" alt="logo-gmail">
+    <span>yurididomenico</span>
   </a>
 
   <div class="contatto">
     <i class="fa-solid fa-phone width-20 text-green"></i>
-    <h4>3480934162</h4>
+    <span class="contatti-telefono">3480934162</span>
   </div>
+
+
 </div>

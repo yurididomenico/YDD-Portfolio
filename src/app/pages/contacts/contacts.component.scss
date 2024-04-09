@@ -1,1 +1,40 @@
 @import 'src/assets/style/styleHeaders.scss';
+
+.container {
+  .contatto {
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+    img,
+    i {
+      width: 30px;
+    }
+
+    img{
+      margin-right: 20px;
+    }
+
+    i {
+      font-size: 25px;
+      margin-left: 5px;
+      margin-right: 15px;
+    }
+
+
+  }
+
+  .popup {
+    width: 300px;
+    background-color:white;
+    color: black;
+    padding: 20px 40px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 100ms linear;
+  }
+
+  .show {
+    opacity: 1;
+  }
+}

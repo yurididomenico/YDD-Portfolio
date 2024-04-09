@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 import { MatTabsModule } from '@angular/material/tabs';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -40,6 +41,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 
     // Angular Material
     MatTabsModule,
+    ClipboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
