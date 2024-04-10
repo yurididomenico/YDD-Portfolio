@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
 import { Project } from './project.model';
 import { ProjectServiceService } from 'src/app/services/project-service.service';
 
@@ -14,3 +14,8 @@ export class ProjectsComponent {
     this.progetti = this.projectService.progetti;
   }
 }
+
+
+
+
+

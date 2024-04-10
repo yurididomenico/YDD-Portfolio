@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
@@ -7,7 +7,6 @@ import { Component, OnDestroy } from '@angular/core';
 })
 export class HomepageComponent implements OnDestroy {
   cursor = '';
-
 
   private mouseMoveListener: (event: MouseEvent) => void;
   private intervalCursor!: number;
@@ -58,6 +57,4 @@ export class HomepageComponent implements OnDestroy {
       dot.remove();
     }, 100);
   }
-
-
 }
