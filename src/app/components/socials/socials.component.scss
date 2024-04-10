@@ -34,3 +34,19 @@
 .fa-youtube:hover {
   color: #fe0000;
 }
+
+@media screen and (max-width: 320px) {
+  .fa-brands {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 430px) {
+  .fa-brands {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 768px) {
+
+}
