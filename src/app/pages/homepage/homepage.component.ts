@@ -23,8 +23,8 @@ export class HomepageComponent implements OnDestroy {
 
     setTimeout(() => {
       this.cursor = '';
-    }, 1000);
-    }, 2000) as any;
+    }, 800);
+    }, 1600) as any;
   }
 
   ngOnDestroy() {
@@ -56,7 +56,7 @@ export class HomepageComponent implements OnDestroy {
 
     setTimeout(() => {
       dot.remove();
-    }, 300);
+    }, 100);
   }
 
 
