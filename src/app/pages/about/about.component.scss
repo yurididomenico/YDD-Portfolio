@@ -9,8 +9,6 @@
     font-size: 18px;
   }
 
-
-
   //
   .job-role {
     margin-bottom: 30px;
@@ -68,5 +66,57 @@
       padding: 20px;
       width: calc(100% / 4);
     }
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .container {
+    .job-role {
+
+      width: 100vw;
+
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+
+    //
+    .description {
+      width: 90vw;
+      line-height: 25px;
+    }
+
+    ul {
+      width: 90vw;
+
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .job-role {
+
+    .title {
+      font-size: 1rem;
+    }
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 431px) and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
