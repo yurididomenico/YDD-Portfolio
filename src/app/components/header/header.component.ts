@@ -12,6 +12,7 @@ export class HeaderComponent {
   constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
 
   showHideDropdown() {
+    console.log("DIOCANE");
     const linksDropdown = this.elementRef.nativeElement.querySelector('.linksDropdown');
     this.renderer.setStyle(linksDropdown, 'top', this.divHeight + 'px');
     this.renderer.setStyle(linksDropdown, 'right', 5 + 'vw');
