@@ -7,7 +7,7 @@ import { Component, ElementRef, ViewChild,  Renderer2, AfterViewInit } from '@an
 })
 export class HeaderComponent {
   @ViewChild('linksDropdown') linksDropdown!: ElementRef;
-  divHeight = 100;
+  divHeight = 50;
 
   constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
 
@@ -17,10 +17,15 @@ export class HeaderComponent {
     this.renderer.setStyle(linksDropdown, 'right', 5 + 'vw');
 
     this.linksDropdown.nativeElement.classList.toggle('hidden');
+    const test = this.elementRef.nativeElement.querySelector('.overlay');
+    test?.classList.remove('hidden');
+
   }
 
   hideDrop() {
 
     this.linksDropdown.nativeElement.classList.add('hidden');
+    const test = this.elementRef.nativeElement.querySelector('.overlay');
+    test?.classList.add('hidden');
   }
 }
