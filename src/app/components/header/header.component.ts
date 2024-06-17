@@ -1,8 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild,  Renderer2, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  @ViewChild('linksDropdown') linksDropdown!: ElementRef;
+  divHeight = 100;
+
+  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
+
+  showHideDropdown() {
+    const linksDropdown = this.elementRef.nativeElement.querySelector('.linksDropdown');
+    this.renderer.setStyle(linksDropdown, 'top', this.divHeight + 'px');
+    this.renderer.setStyle(linksDropdown, 'right', 5 + 'vw');
+
+    this.linksDropdown.nativeElement.classList.toggle('hidden');
+  }
+
+  hideDrop() {
+
+    this.linksDropdown.nativeElement.classList.add('hidden');
+  }
+}

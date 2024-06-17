@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>YDD Portfolio</h1>
+  <h1 routerLink="/">YDD Portfolio</h1>
 
   <!-- <ul class="linksPage">
     <li>Homepage</li>
@@ -10,16 +10,27 @@
     <li>Contatti</li>
   </ul> -->
 
-  <div class="hamburger-menu">
+  <div class="hamburger-menu" (click)="showHideDropdown()">
     <i class="fa-solid fa-bars"></i>
   </div>
 
+  <div class="linksDropdown hidden" #linksDropdown (click)="hideDrop()">
+    <div class="menuCSS" routerLink="/about">
+      <span>Chi sono?</span>
+    </div>
+    <div routerLink="/experience">
+      <span>Esperienze</span>
+    </div>
+    <div routerLink="/projects">
+      <span>Progetti</span>
+    </div>
+    <div routerLink="/contacts">
+      <span>Contatti</span>
+    </div>
+  </div>
+
   <ul class="linksPage">
-    <li
-      routerLink="/"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
+    <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
       Homepage
     </li>
     <li routerLink="about" routerLinkActive="active">Chi Sono</li>

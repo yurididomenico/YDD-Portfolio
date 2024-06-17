@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
+import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 
@@ -40,6 +41,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     BrowserAnimationsModule,
 
     // Angular Material
+    MatMenuModule,
     MatTabsModule,
     ClipboardModule,
   ],
