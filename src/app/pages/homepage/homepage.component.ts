@@ -45,7 +45,7 @@ export class HomepageComponent implements OnDestroy {
       width: 5px;
       background-color: #1daa1b;
       border-radius: 5px;
-      top: ${mousePos.y + 10}px;
+      top: ${mousePos.y}px;
       left: ${mousePos.x}px;
       opacity: 0.5;
       z-index: 1000;
