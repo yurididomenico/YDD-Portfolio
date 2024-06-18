@@ -104,6 +104,28 @@
       width: calc(100% / 4);
     }
   }
+
+  .right {
+
+    .gradient-text-java {
+      /* Fallback: Set a background color. */
+      background-color: red;
+
+      /* Create the gradient. */
+      background-image: linear-gradient(to bottom, #ea2d2e, #0074bd);
+
+      /* Set the background size and repeat properties. */
+      background-size: 100%;
+      background-repeat: repeat;
+
+      /* Use the text as a mask for the background. */
+      /* This will show the gradient as a text color rather than element bg. */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
