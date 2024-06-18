@@ -49,19 +49,19 @@
   .fade-in-delayed {
     opacity: 0; /* Impostazione dell'opacità a 0 per nascondere gli elementi */
     transform: translateY(100%); /* Traslazione degli elementi verso il basso */
-    animation: fadeIn 2s ease 8s forwards; /* Aggiunta dell'animazione fadeIn con ritardo */
+    animation: fadeIn 2s ease 3s forwards; /* Aggiunta dell'animazione fadeIn con ritardo */
   }
 
   .fade-in-delayed-2 {
     opacity: 0;
     transform: translateY(100%);
-    animation: fadeIn 2s ease 16s forwards;
+    animation: fadeIn 2s ease 6s forwards;
   }
 
   .fade-in-delayed-3 {
     opacity: 0;
     transform: translateY(100%);
-    animation: fadeIn 2s ease 18s forwards;
+    animation: fadeIn 2s ease 9s forwards;
   }
 
   @keyframes fadeIn {
