@@ -1,4 +1,5 @@
 @import 'src/assets/style/styleColors.scss';
+@import 'src/assets/style/styleFadeEffect.scss';
 
 .container {
   display: flex;
@@ -23,18 +24,7 @@
   ///////////////////////////////////////////
 
 
-  .fade-in {
-    opacity: 0;
-    transform: translateX(100%);
-    animation: fadeIn 0.5s forwards;
-  }
 
-  @keyframes fadeIn {
-    to {
-        opacity: 1; /* Impostazione dell'opacità a 1 per mostrare gli elementi */
-        transform: translateY(0); /* Traslazione degli elementi verso l'alto */
-      }
-    }
 
   .linksDropdown {
     position: absolute;

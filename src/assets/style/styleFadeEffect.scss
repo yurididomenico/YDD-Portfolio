@@ -1,0 +1,52 @@
+//Stile per aggiungere effetto dissolvenza e traslazione
+
+.fade-in-rightLeft {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: fadeInRightLeft 0.5s forwards;
+}
+
+@keyframes fadeInRightLeft {
+  to {
+    opacity: 1; /* Impostazione dell'opacità a 1 per mostrare gli elementi */
+    transform: translateY(0); /* Traslazione degli elementi verso l'alto */
+  }
+}
+
+.fade-in-bottomTop {
+  opacity: 0; /* Impostazione dell'opacità a 0 per nascondere gli elementi */
+  transform: translateY(100%); /* Traslazione degli elementi verso il basso */
+  animation: fadeInBottomTop 1s ease forwards; /* Aggiunta dell'animazione fadeIn */
+}
+
+.fade-in-delayed {
+  opacity: 0; /* Impostazione dell'opacità a 0 per nascondere gli elementi */
+  transform: translateY(100%); /* Traslazione degli elementi verso il basso */
+  animation: fadeInDelayed 2s ease 3s forwards; /* Aggiunta dell'animazione fadeIn con ritardo */
+}
+
+.fade-in-delayed-2 {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInDelayed 2s ease 6s forwards;
+}
+
+.fade-in-delayed-3 {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInDelayed 2s ease 9s forwards;
+}
+
+@keyframes fadeInBottomTop {
+  to {
+    opacity: 1; /* Impostazione dell'opacità a 1 per mostrare gli elementi */
+    transform: translateY(0); /* Traslazione degli elementi verso l'alto */
+  }
+}
+
+@keyframes fadeInDelayed {
+  to {
+    opacity: 1; /* Impostazione dell'opacità a 1 per mostrare gli elementi */
+    transform: translateY(0); /* Traslazione degli elementi verso l'alto */
+  }
+}
