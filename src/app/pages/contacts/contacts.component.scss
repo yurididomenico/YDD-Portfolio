@@ -34,9 +34,14 @@
   }
 
   .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
+    height: 75px;
+
     background-color:$primary-color;
-    padding: 20px 40px;
+    // padding: 20px 40px;
     border-radius: 5px;
     opacity: 0;
     transition: opacity 200ms ease-in-out;
@@ -67,6 +72,7 @@
 @media screen and (max-width: 768px) {
   .container {
 
+
     .contatto {
 
       span {
@@ -86,8 +92,10 @@
 
     .popup {
       position: absolute;
-      left: 10%;
+      left: 20%;
+      transform: translateX(-30%);
       // opacity: 1;
+      width: 40%;
     }
 
     .show {
