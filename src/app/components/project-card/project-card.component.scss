@@ -36,7 +36,58 @@
     }
   }
 
-  .test {
+  .reversed-card {
     flex-direction: row-reverse;
+  }
+}
+
+
+@media screen and (max-width: 320px) {}
+
+@media screen and (min-width: 320px) and (max-width: 430px) {}
+
+@media screen and (min-width: 431px) and (max-width: 768px) {}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+
+    .project-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+
+      span {
+        font-size: 1.2rem;
+        margin-inline: 20px;
+      }
+    }
+
+    article {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      margin-bottom: 100px;
+
+      video {
+        height: 100%;
+        width: 100%;
+        border: 5px solid black;
+      }
+
+      p {
+        font-size: 15px;
+        padding-top: 0;
+        line-height: 160%;
+        cursor: default;
+        flex-grow: 1;
+      }
+    }
+
+    .reversed-card {
+      flex-direction: column;
+    }
   }
 }
