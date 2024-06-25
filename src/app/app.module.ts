@@ -21,6 +21,9 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 
 import { SocialsComponent } from './components/socials/socials.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { Modellazione3dComponent } from './pages/modellazione3d/modellazione3d.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +37,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     ProjectsComponent,
     ContactsComponent,
     ProjectCardComponent,
+    Modellazione3dComponent,
   ],
   imports: [
     BrowserModule,

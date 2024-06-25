@@ -19,6 +19,11 @@
     font-family: "Pixelify Sans", sans-serif;
     padding: 20px 10px;
     margin: 0;
+
+    &:hover {
+
+      cursor: pointer;
+    }
   }
 
   .linksDropdown {
