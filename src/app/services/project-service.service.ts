@@ -18,7 +18,7 @@ export class ProjectServiceService {
     new Project(
       'Yu Gi Oh Dex',
       '../../assets/video/YuGiOhDexFinal.mp4',
-      'Eccoti nel mio portfolio dedicato a Yu-Gi-Oh! Qui puoi tuffarti nel mondo delle carte con un progetto interattivo che ho creato usando HTML, CSS e Javascript. Esplora le carte come mai prima, con dettagli come il nome, il tipo, l\'effetto e le statistiche di gioco. Il design è fresco e facile da usare, mostrando la mia passione per la creatività e la tecnologia. Dai un\'occhiata e divertiti a scoprire il mondo di Yu-Gi-Oh! attraverso il mio lavoro!'
+      'Yu-Gi-Oh! Qui puoi tuffarti nel mondo delle carte con un progetto interattivo che ho creato usando HTML, CSS e Javascript. Esplora le carte come mai prima, con dettagli come il nome, il tipo, l\'effetto e le statistiche di gioco. Il design è fresco e facile da usare, mostrando la mia passione per la creatività e la tecnologia. Dai un\'occhiata e divertiti a scoprire il mondo di Yu-Gi-Oh! attraverso il mio lavoro!'
     ),
 
     new Project(
