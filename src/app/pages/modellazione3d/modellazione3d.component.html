@@ -1,1 +1,23 @@
-<p>modellazione3d works!</p>
+<div class="container">
+  <div class="titolo-pagina">Esperienze</div>
+
+  <div class="area-carte">
+
+    <div class="progetto-carta"
+      *ngFor="
+          let progetto3D of projects_3D;
+          let i = index
+        "
+    >
+      <div class="progetto-posizione">
+        {{ progetto3D.title }}
+      </div>
+
+      <app-line></app-line>
+
+      <div class="progetto-descrizione" [innerHTML]="progetto3D.description">
+        {{ progetto3D.description }}
+      </div>
+    </div>
+  </div>
+</div>
