@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Project_3D } from './modellazione3d.model';
-import { Projects3DService } from 'src/app/services/projects3-d.service';
+import { Progetto_3D } from './projects3D.model';
+import { Projects3dService } from 'src/app/services/projects-3d.service';
 
 @Component({
   selector: 'app-modellazione3d',
@@ -8,12 +8,10 @@ import { Projects3DService } from 'src/app/services/projects3-d.service';
   styleUrls: ['./modellazione3d.component.scss']
 })
 export class Modellazione3dComponent {
-  projects_3D: Project_3D[] = []
 
-  constructor(private projectsService: Projects3DService) {}
+  progetti_3d: Progetto_3D[];
 
-  ngOnInit(): void {
-    this.projects_3D = this.projectsService.projects_3D_List;
+  constructor(private project3dService: Projects3dService) {
+    this.progetti_3d = this.project3dService.progetti3d;
   }
-
 }
