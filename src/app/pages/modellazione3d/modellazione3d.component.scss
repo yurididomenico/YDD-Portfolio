@@ -43,3 +43,31 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+
+    .area-carte {
+
+      .progetto3d {
+
+        .titolo {
+          line-height: 100%;
+        }
+
+        .descrizione {
+          display: none;
+        }
+
+        .album-immagini {
+
+          justify-content: flex-start;
+
+          .immagine {
+
+            width: calc(100% / 2 - 20px);
+          }
+        }
+      }
+    }
+  }
+}
