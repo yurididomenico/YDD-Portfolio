@@ -3,6 +3,11 @@
 
 .container {
 
+  .desc-mobile {
+    display: none;
+    margin-bottom: 20px;
+  }
+
   .area-carte {
 
     display: flex;
@@ -45,6 +50,10 @@
 
 @media screen and (max-width: 1024px) {
   .container {
+
+    .desc-mobile {
+      display: block;
+    }
 
     .area-carte {
 
