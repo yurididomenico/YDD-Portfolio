@@ -22,6 +22,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { SocialsComponent } from './components/socials/socials.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { Modellazione3dComponent } from './pages/modellazione3d/modellazione3d.component';
+import { BackToTopComponent } from './components/buttons/back-to-top/back-to-top.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { Modellazione3dComponent } from './pages/modellazione3d/modellazione3d.c
     ContactsComponent,
     ProjectCardComponent,
     Modellazione3dComponent,
+    BackToTopComponent,
   ],
   imports: [
     BrowserModule,
