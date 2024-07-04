@@ -1,0 +1,48 @@
+@import '/src/assets/style/styleColors.scss';
+
+.container {
+
+  margin-bottom: 50px;
+  display: flex;
+
+  .title {
+
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-right: 5px;
+    margin-bottom: 50px;
+  }
+
+  .ritorno {
+
+    width: 15px;
+    height: 30px;
+    background-color: $primary-color;
+  }
+
+  .animazioneCursoreRedirect {
+    z-index: 5;
+    animation: smallToLarge 2s ease forwards;
+  }
+
+  @keyframes smallToLarge {
+    to {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: scale(1000);
+      z-index: 5;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+
+  .container {
+
+    .title {
+
+      font-size: 1.7rem;
+    }
+  }
+}

@@ -23,6 +23,7 @@ import { SocialsComponent } from './components/socials/socials.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { Modellazione3dComponent } from './pages/modellazione3d/modellazione3d.component';
 import { BackToTopComponent } from './components/buttons/back-to-top/back-to-top.component';
+import { Page404Component } from './pages/page404/page404.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { BackToTopComponent } from './components/buttons/back-to-top/back-to-top
     ProjectCardComponent,
     Modellazione3dComponent,
     BackToTopComponent,
+    Page404Component,
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { Modellazione3dComponent } from './pages/modellazione3d/modellazione3d.component';
+import { Page404Component } from './pages/page404/page404.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'modellazione3d', component: Modellazione3dComponent },
+  { path: '**', component: Page404Component },
 ];
 
 @NgModule({
