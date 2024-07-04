@@ -24,7 +24,6 @@ export class BackToTopComponent implements OnInit {
   }
 
   scrollToTop() {
-    console.log("x");
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

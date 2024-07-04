@@ -1,18 +1,20 @@
-import { AfterViewChecked, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
-export class MainComponent implements AfterViewChecked {
+export class MainComponent {
+
 
   constructor() {}
 
-  ngAfterViewChecked(): void {
-  }
-
   ngOnInit(): void {
 
+  }
+
+  onActivate($event: any) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
