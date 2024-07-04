@@ -48,11 +48,13 @@
   }
 }
 
+
+
 @media screen and (max-width: 1024px) {
   .container {
 
     .desc-mobile {
-      display: block;
+      display: none;
     }
 
     .area-carte {
@@ -64,7 +66,7 @@
         }
 
         .descrizione {
-          display: none;
+          width: 100%;
         }
 
         .album-immagini {
@@ -75,6 +77,46 @@
 
             width: 100%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+
+    .area-carte {
+
+      .progetto3d {
+
+        .album-immagini {
+
+          justify-content: flex-start;
+
+          .immagine {
+
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+
+    .desc-mobile {
+      display: block;
+    }
+
+    .area-carte {
+
+      .progetto3d {
+
+        .descrizione {
+          display: none;
         }
       }
     }
