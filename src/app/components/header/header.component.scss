@@ -13,16 +13,15 @@
   border-bottom: 2px solid $primary-color;
   z-index: 1;
 
-
-  //
   h1 {
     font-family: "Pixelify Sans", sans-serif;
     padding: 20px 10px;
     margin: 0;
+    cursor: pointer;
 
     &:hover {
-
-      cursor: pointer;
+      transition-duration: 500ms;
+      color: $primary-color-highlight;
     }
   }
 
@@ -69,7 +68,7 @@
         transition-duration: 500ms;
         background: linear-gradient(to bottom, transparent 95%, #1daa1b);
         box-shadow: 0 5px 0 #1daa1b;
-        color: #60f75e;
+        color: $primary-color-highlight;
       }
     }
   }
