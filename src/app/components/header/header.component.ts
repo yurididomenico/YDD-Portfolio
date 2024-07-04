@@ -23,7 +23,6 @@ export class HeaderComponent {
   }
 
   hideDrop() {
-
     this.linksDropdown.nativeElement.classList.add('hidden');
     const test = this.elementRef.nativeElement.querySelector('.overlay');
     test?.classList.add('hidden');
