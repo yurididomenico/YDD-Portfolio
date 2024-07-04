@@ -5,6 +5,11 @@
   display: flex;
   justify-content: space-between;
 
+  .left {
+
+    margin-bottom: 50px;
+  }
+
   //
   p {
     font-size: 18px;
@@ -75,6 +80,8 @@
   }
 
   .right {
+
+    margin-bottom: 60px;
 
     .gradient-text-java {
       /* Fallback: Set a background color. */
