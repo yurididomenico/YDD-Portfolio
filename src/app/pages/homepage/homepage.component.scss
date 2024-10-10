@@ -5,13 +5,15 @@
   overflow-x: hidden;
   display: flex;
   margin: 0 0 50px 0;
+  flex-wrap: wrap;
 
   .imageProfile {
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 15vw;
     margin: 0 50px 0 0;
 
     background-image: url("../../../assets/img/img_profile/YDD_Profile.jpg");
+    background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 100%;
   }
@@ -61,7 +63,7 @@
   }
 
   .cv {
-    margin: 50px 0 0 250px;
+    margin: 0;
 
     span {
       font-size: 30px;
@@ -122,7 +124,6 @@
     }
 
     .cv {
-      margin: 0;
 
       span {
         font-size: 20px;
@@ -151,11 +152,11 @@
         }
 
         h2 {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
 
         h3 {
-          font-size: 2rem;
+          font-size: 1.5rem;
           line-height: 100%;
 
           .cursor {
@@ -164,12 +165,22 @@
         }
       }
     }
-  }
-}
 
-@media screen and (max-width: 1024) {
+    .cv {
 
-  .title {
-    margin-top: 0;
+      span {
+        font-size: 20px;
+      }
+
+      ul {
+
+        li {
+
+          a {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
   }
 }
