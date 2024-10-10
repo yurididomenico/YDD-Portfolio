@@ -24,6 +24,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { Modellazione3dComponent } from './pages/modellazione3d/modellazione3d.component';
 import { BackToTopComponent } from './components/buttons/back-to-top/back-to-top.component';
 import { Page404Component } from './pages/page404/page404.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { Page404Component } from './pages/page404/page404.component';
     Modellazione3dComponent,
     BackToTopComponent,
     Page404Component,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
